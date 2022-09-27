@@ -1,19 +1,19 @@
 {
-  "name": "truefuture-tooltip",
+  "name": "truefuture-ui",
   "version": "0.0.9",
-  "main": "./lib/w-tooltip.umd.js",
-  "module": "./lib/w-tooltip.es.js",
+  "main": "./lib/truefuture-ui.umd.js",
+  "module": "./lib/truefuture-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/w-tooltip.es.js",
-      "require": "./dist/w-tooltip.umd.js"
+      "import": "./lib/truefuture-ui.es.js",
+      "require": "./lib/truefuture-ui.umd.js"
     },
     "./dist/styles.css": "./dist/style.css"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "generate": "vue-cli-service build --target lib --name w-tooltip src/index.js"
+    "generate": "vue-cli-service build --target lib --name truefuture-ui src/index.js"
   },
   "dependencies": {
     "axios": "^0.21.4",

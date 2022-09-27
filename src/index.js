@@ -1,3 +1,6 @@
 import Tooltip from './components/WTooltip.vue'
+import Button from './components/WButton.vue'
 
-export default Tooltip
+export const WTooltip = Tooltip
+
+export const WButton = Button
