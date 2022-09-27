@@ -1,8 +1,8 @@
 {
-  "name": "w-tooltip",
-  "version": "0.0.1",
-  "main": "./dist/w-tooltip.umd.js",
-  "module": "./dist/w-tooltip.es.js",
+  "name": "truefuture-tooltip",
+  "version": "0.0.9",
+  "main": "./lib/w-tooltip.umd.js",
+  "module": "./lib/w-tooltip.es.js",
   "exports": {
     ".": {
       "import": "./dist/w-tooltip.es.js",

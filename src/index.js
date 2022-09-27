@@ -1,2 +1,3 @@
 import Tooltip from './components/WTooltip.vue'
-export default { Tooltip }
+
+export default Tooltip
