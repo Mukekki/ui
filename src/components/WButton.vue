@@ -3,7 +3,7 @@
         <slot></slot>
     </a>
 
-    <router-link v-else-if="!$functions.isEmpty(to)" class="btn" :to="to" :class="btnClasses" :disabled='disabled' @click="click">
+    <router-link v-else-if="!isEmpty(to)" class="btn" :to="to" :class="btnClasses" :disabled='disabled' @click="click">
         <slot></slot>
     </router-link>
 
@@ -71,7 +71,20 @@ export default {
     methods: {
         click(event) {
             this.$emit('click', event)
-        }
+        },
+        isEmpty(value) {
+            if (value === null) {
+                return true
+            } else if (typeof value === 'object') {
+                return Object.keys(value).length === 0
+            } else if (typeof value === 'string') {
+                return value.length === 0
+            } else if (typeof value === 'number') {
+                return false
+            } else {
+                return !Boolean(value)
+            }
+        },
     }
 }
 </script>
