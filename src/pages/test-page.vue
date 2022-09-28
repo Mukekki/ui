@@ -11,6 +11,8 @@ export default {
         this.$store.dispatch('test')
 
         console.log('test from created')
+
+        console.log('da nu nahui ebanutsya')
     }
 }
 </script>
