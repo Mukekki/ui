@@ -3,3 +3,12 @@
         <h1>это тестовая страница</h1>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'test-page',
+    created() {
+        this.$store.dispatch('test')
+    }
+}
+</script>
