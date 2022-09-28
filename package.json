@@ -1,6 +1,6 @@
 {
   "name": "truefuture-ui",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "./lib/truefuture-ui.umd.js",
   "module": "./lib/truefuture-ui.es.js",
   "exports": {
