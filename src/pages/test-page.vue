@@ -9,6 +9,8 @@ export default {
     name: 'test-page',
     created() {
         this.$store.dispatch('test')
+
+        console.log('test from created')
     }
 }
 </script>
